@@ -1,6 +1,13 @@
 # FileUploader
 
-**TODO: Add description**
+run with:
+
+```sh
+# on the first time
+asdf install
+
+mix start
+```
 
 ## Installation
 

@@ -31,8 +31,12 @@ defmodule FileUploader.MixProject do
 
   defp aliases do
     [
-      build_web: "cmd cd web && npm install && parcel build --experimental-scope-hoisting src/index.html",
+      build_web: &build_web/1,
       start: "cmd bash ./scripts/server.sh"
     ]
+  end
+
+  defp build_web(_) do
+    Mix.Tasks.Cmd.run(["--cd", "web", "npm install && $(npm bin)/parcel build --experimental-scope-hoisting src/index.html"])
   end
 end
