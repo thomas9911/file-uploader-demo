@@ -12,3 +12,15 @@ wasm-bindgen = "0.2.80"
 web-sys = "0.3.57"
 yew = "0.19.3"
 yew-hooks = "0.1.54"
+
+[profile.release]
+# less code to include into binary
+panic = 'abort'
+# optimization over all codebase ( better optimization, slower build )
+codegen-units = 1
+# optimization for size ( more aggressive )
+opt-level = 'z'
+# optimization for size
+# opt-level = 's'
+# link time optimization using using whole-program analysis
+lto = true
