@@ -25,7 +25,7 @@ defmodule FileUploader.MixProject do
     [
       {:plug_cowboy, "~> 2.5"},
       {:cors_plug, "~> 3.0"},
-      {:presigned_url, "~> 0.1", organization: "betty_blocks_bv"},
+      {:presigned_url, "~> 0.1", organization: "betty_blocks_bv"}
     ]
   end
 
@@ -37,6 +37,10 @@ defmodule FileUploader.MixProject do
   end
 
   defp build_web(_) do
-    Mix.Tasks.Cmd.run(["--cd", "web", "npm install && $(npm bin)/parcel build --experimental-scope-hoisting src/index.html"])
+    Mix.Tasks.Cmd.run([
+      "--cd",
+      "web",
+      "npm install && $(npm bin)/parcel build --experimental-scope-hoisting src/index.html"
+    ])
   end
 end
