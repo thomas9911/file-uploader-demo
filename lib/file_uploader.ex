@@ -9,7 +9,7 @@ defmodule FileUploader do
 
   plug(CORSPlug)
   plug(Plug.Static, at: "/", from: "web/dist", only_matching: ["index", "src", "web"])
-  plug(Plug.Static, at: "/wasm", from: "wasm/dist", only_matching: ["index"])
+  plug(Plug.Static, at: "/wasm", from: "wasm/dist", only_matching: ["index", "wasm"])
   # plug Plug.Static, at: "/", from: {:file_uploader, "priv/static"}
 
   plug(:match)

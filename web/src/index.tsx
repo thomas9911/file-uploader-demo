@@ -6,5 +6,7 @@ import App from "~/App";
 const container = document.getElementById("root");
 const root = createRoot(container!);
 root.render(
-<Container maxWidth="sm"><App /></Container>
+  <Container maxWidth="sm">
+    <App />
+  </Container>
 );
