@@ -1,0 +1,32 @@
+{
+  "name": "playground_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fmt": "prettier --write src/*",
+    "build": "parcel build --experimental-scope-hoisting src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.17.9",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.6.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "web-resource-inliner": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "parcel-bundler": "^1.3.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  }
+}

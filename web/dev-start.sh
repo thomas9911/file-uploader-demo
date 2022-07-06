@@ -4,4 +4,4 @@ set -e
 
 "$(npm bin)/tsc" --noEmit --watch &
 
-"parcel" ./src/index.html
+"$(npm bin)/parcel" ./src/index.html

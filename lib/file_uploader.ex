@@ -23,7 +23,7 @@ defmodule FileUploader do
         name: name,
         content_type: content_type,
         bucket: @bucket,
-        max_file_size: 15 * 1024 ** 2
+        max_file_size: 15 * 1024 ** 4
       })
 
     {:ok, response} = PresignedUrl.PostRequest.V4.sign_with_options(config)

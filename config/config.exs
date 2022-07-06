@@ -11,8 +11,8 @@ config :cors_plug,
 
 config :presigned_url,
   ex_aws: %{
-    access_key_id: "test_key_id",
-    secret_access_key: "secret_access_key",
+    access_key_id: "test",
+    secret_access_key: "secret123",
     s3_auth_version: "4",
     host: "localhost",
     port: "9000",
@@ -21,3 +21,6 @@ config :presigned_url,
   }
 
 config :logger, level: :debug
+
+# config :ex_aws, :hackney_opts,
+#   recv_timeout: :infinity
